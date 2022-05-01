@@ -6,9 +6,8 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Plan</title>
-
+   
    <link rel="stylesheet" href="index.css">
-
  </head>
  <body>
 
@@ -19,16 +18,45 @@ body{
     background-color: rgb(39, 39, 83);
 }
 
+#search{
+    float: right;
+    border: 4px solid black;
+    height: 20px;
+    width: 250px;
+    font-size: 14px;
+}
+
+li{
+    font-size: 5px;
+}
 .Entertain{
     display: flex;
+   overflow-x: scroll;
+   overflow-y: hidden;
+}
+
+.Entertain::-webkit-scrollbar{
+    display: none;
 }
 
 .comd{
     display: flex;
+    overflow-x: scroll;
+   overflow-y: hidden;
+}
+
+.comd::-webkit-scrollbar{
+    display: none;
 }
 
 .horr{
     display: flex;
+    overflow-x: scroll;
+   overflow-y: hidden;
+}
+
+.horr::-webkit-scrollbar{
+    display: none;
 }
 
 #En:hover{
@@ -115,112 +143,182 @@ body{
 #img21:hover{
     transform: scale(1.2);
 }
+
+
+
+@media(max-width:991px){
+
+html{
+font-size:55%
+}
+header{
+   padding: 2rem;
+}
+section{
+   padding: 2rem;
+}
+}
+
+@media(max-width:768px){
+header
+{
+display:initial
+}
+.Entertain{
+    display: block;
+}
+.comd{
+    display: block;
+}
+.horr{
+    display: block;
+}
+}
+
+
+@media(max-width:450px){
+html{
+font-size:50%
+}
+
+.Entertain{
+    display: block;
+}
+.comd{
+    display: block;
+}
+.horr{
+    display: block;
+}
+}
+
   </style>
-   
+  <input type="text" id="search" placeholder="search" onkeyup="searchmovies()">
+    <h1 id="head">ENJOY YOUR PLAN</h1>
 
-
-
-    <h1 id="head">ENJOY YOUR PLAN</h1>                         
-
+   <ul id="myul">
 
    <div class="Entertain">
    <h1 id="En">Entertainment</h1>
-<a href="https://www.youtube.com/watch?v=gKizDojsdvs">
-   <img src="https://www.tollywood.net/wp-content/uploads/2018/12/KGF-Movie-Review.jpg" alt="" id="img1" width="200px" height="200px" >
-</a>
-  <a href="https://www.youtube.com/watch?v=gYoPkmjAK9U">
-    <img src="https://static.india.com/wp-content/uploads/2016/10/Baahubali-2.jpg" alt="" id="img2" width="200px" height="200px">
-  </a>
-  <a href="https://www.youtube.com/watch?v=yLHdBurrRss">
 
-      <img src="https://m.media-amazon.com/images/M/MV5BZWYxYzBmYzItYjZjZi00NjdmLWE0MTQtY2VkYzY1MWI4OThhXkEyXkFqcGdeQXVyNDMyNDQ4NjY@._V1_.jpg" alt="" id="img3" width="200px" height="200px">
-  </a>
-  <a href="https://www.youtube.com/watch?v=BJ4BBzLvrRY">
+   <li><a href="https://www.youtube.com/watch?v=gKizDojsdvs">
+    kgf<img src="https://www.tollywood.net/wp-content/uploads/2018/12/KGF-Movie-Review.jpg" alt="" id="img1" width="250px" height="200px" >
+ </a></li>
+ <li><a href="https://www.youtube.com/watch?v=gYoPkmjAK9U">
+    Baahubali-2<img src="https://static.india.com/wp-content/uploads/2016/10/Baahubali-2.jpg" alt="" id="img2" width="250px" height="200px">
+  </a></li>
+  <li><a href="https://www.youtube.com/watch?v=yLHdBurrRss">
+    baaghi 3
+      <img src="https://m.media-amazon.com/images/M/MV5BZWYxYzBmYzItYjZjZi00NjdmLWE0MTQtY2VkYzY1MWI4OThhXkEyXkFqcGdeQXVyNDMyNDQ4NjY@._V1_.jpg" alt="" id="img3" width="250px" height="200px">
+  </a></li>
+  <li><a href="https://www.youtube.com/watch?v=BJ4BBzLvrRY">
+     Robot 2.0
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkZ1TmSj4fT9paEYL3lYT3S3wxsL2lYCHg6e2ds_QR1Q&s" alt="" id="img4" width="250px" height="200px">
+  </a></li>
+ <li> <a href="https://www.youtube.com/watch?v=gZy4vIGf7MY">
 
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkZ1TmSj4fT9paEYL3lYT3S3wxsL2lYCHg6e2ds_QR1Q&s" alt="" id="img4" width="200px" height="200px">
-  </a>
-  <a href="https://www.youtube.com/watch?v=gZy4vIGf7MY">
-
-      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/I-am-kalam-2.jpg/220px-I-am-kalam-2.jpg" alt="" width="200px" height="200px" id="img5">
-  </a>
-  <a href="https://www.youtube.com/watch?v=BkvwoTLvIRk">
-    
-      <img src="https://images004-a.erosnow.com/movie/9/1007299/img145210/6984222/1007299_6984222.jpg" alt="" width="200px" height="200px" id="img6">
-  </a>
-  <a href="https://www.youtube.com/watch?v=6D_sG2rWoHs">
+     i am I-am-kalam-2 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/I-am-kalam-2.jpg/220px-I-am-kalam-2.jpg" alt="" width="250px" height="200px" id="img5">
+  </a></li>
+  <li><a href="https://www.youtube.com/watch?v=BkvwoTLvIRk">
+    singham returns
+      <img src="https://images004-a.erosnow.com/movie/9/1007299/img145210/6984222/1007299_6984222.jpg" alt="" width="250px" height="200px" id="img6">
+  </a></li>
+  <li><a href="https://www.youtube.com/watch?v=6D_sG2rWoHs">
       
-      <img src="https://cdn.wallpapersafari.com/33/97/ROisgP.jpg" alt="" width="200px" height="200px" id="img7">
-  </a>
+      kesari<img src="https://cdn.wallpapersafari.com/33/97/ROisgP.jpg" alt="" width="250px" height="200px" id="img7">
+  </a></li>
 </div>
 
 
 <div class="comd">
     <h1 id="Com">Comedy Movies</h1>
-    <a href="https://www.youtube.com/watch?v=LXXkiUKDK4w">
-        <img src="https://madaboutmoviez.files.wordpress.com/2014/08/its-entertainment-2.jpg" alt="" id="img8" width="200px" height="200px">
+    <li><a href="https://www.youtube.com/watch?v=LXXkiUKDK4w">
+       Entertainment 2 <img src="https://madaboutmoviez.files.wordpress.com/2014/08/its-entertainment-2.jpg" alt="" id="img8" width="350px" height="200px">
     
-    </a>
-    <a href="https://www.youtube.com/watch?v=A_72-_63Sb0">
-    
-        <img src="https://m.media-amazon.com/images/M/MV5BNzgzYjZjYzMtNjcyYy00NWI3LTg1NDItOTMzMzdhMjhjNWExXkEyXkFqcGdeQXVyNjA3OTI5MjA@._V1_FMjpg_UX1000_.jpg" alt="" id="img9" width="200px" height="200px">
-    </a>
-    <a href="https://www.youtube.com/watch?v=IDfgiurU-5s">
-    
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/49/Ajay_Devgn%27s_Golmaal_Again_poster.jpg/220px-Ajay_Devgn%27s_Golmaal_Again_poster.jpg" alt="" id="img10" width="200px" height="200px">
-    </a>
-    <a href="https://www.youtube.com/watch?v=My5L3qLhewg">
-        
-        <img src="https://stat1.bollywoodhungama.in/wp-content/uploads/2016/03/60308633.jpg" alt="" id="img8" width="200px" height="200px"id="img11">
-    </a>
-    <a href="https://www.youtube.com/watch?v=uhiWdRBwSQo">
-
-        <img src="https://i.pinimg.com/originals/26/fa/a0/26faa0828636762a5f492a138bc5513c.jpg" alt="" width="200px" height="200px" id="img12">
-    </a>
-    <a href="https://www.youtube.com/watch?v=XFvn7yIvRBY">
-
-        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_hcdl/sources/r1/cms/prod/8284/388284-h" alt="" width="200px" height="200px"id="img13">
-    </a>
-    <a href="https://www.youtube.com/watch?v=b4YWKXKZ2PY">
-
-        <img src="https://m.media-amazon.com/images/M/MV5BZWNhNmJiNTctZWJlZi00ZGIzLTgyYTktYmJmNTlmZTA3NDIzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY218_CR4,0,150,218_AL_.jpg" alt="" width="200px" height="200px"id="img14">
-    </a>
+    </a></li>
+    <li><a href="https://www.youtube.com/watch?v=A_72-_63Sb0">
+      phir hera pheri
+        <img src="https://m.media-amazon.com/images/M/MV5BNzgzYjZjYzMtNjcyYy00NWI3LTg1NDItOTMzMzdhMjhjNWExXkEyXkFqcGdeQXVyNjA3OTI5MjA@._V1_FMjpg_UX1000_.jpg" alt="" id="img9" width="250px" height="200px">
+    </a></li>
+    <li><a href="https://www.youtube.com/watch?v=IDfgiurU-5s">
+      golman again
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/49/Ajay_Devgn%27s_Golmaal_Again_poster.jpg/220px-Ajay_Devgn%27s_Golmaal_Again_poster.jpg" alt="" id="img10" width="250px" height="200px">
+    </a></li>
+   <li>> <a href="https://www.youtube.com/watch?v=My5L3qLhewg">
+        khatta meetha
+        <img src="https://stat1.bollywoodhungama.in/wp-content/uploads/2016/03/60308633.jpg" alt="" id="img8" width="250px" height="200px"id="img11">
+    </a></li>
+    <li><a href="https://www.youtube.com/watch?v=uhiWdRBwSQo">
+       jolly llb2
+        <img src="https://i.pinimg.com/originals/26/fa/a0/26faa0828636762a5f492a138bc5513c.jpg" alt="" width="250px" height="200px" id="img12">
+    </a></li>
+    <li><a href="https://www.youtube.com/watch?v=XFvn7yIvRBY">
+           total dhamaal
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_hcdl/sources/r1/cms/prod/8284/388284-h" alt="" width="250px" height="200px"id="img13">
+    </a></li>
+    <li><a href="https://www.youtube.com/watch?v=b4YWKXKZ2PY">
+        bol bachhan
+        <img src="https://m.media-amazon.com/images/M/MV5BZWNhNmJiNTctZWJlZi00ZGIzLTgyYTktYmJmNTlmZTA3NDIzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY218_CR4,0,150,218_AL_.jpg" alt="" width="250px" height="200px"id="img14">
+    </a></li>
 
    </div>
    <div class="horr">
      <h1 id="Hor">Horror Movies</h1>
-     <a href="https://www.youtube.com/watch?v=jzYxbnHHhY4">
+    <li><a href="https://www.youtube.com/watch?v=jzYxbnHHhY4">
+            Bhool-Bhulaiyaa-2
+         <img src="https://stat2.bollywoodhungama.in/wp-content/uploads/2019/08/Bhool-Bhulaiyaa-2-2-306x393.jpg" alt="" id="img15" width="250px" height="200px">
+     </a></li>
+     <li><a href="https://www.youtube.com/watch?v=sSPxzCZhM3s">
+            Kanchana
+         <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202007/Kanchana.jpeg?v3k0ww9LolWgS2RO4IE5_jfZdRvndr1Q&size=1200:675" alt="" id="img16" width="250px" height="200px">
+     </a></li>
+    <li><a href="https://www.youtube.com/watch?v=Of466a8ymIk">
+           annabella
+         <img src="https://filmfare.wwmindia.com/content/2021/aug/best-english-horror-movie-annabella-51629283623.jpg" alt="" id="img17" width="250px" height="200px">
+     </a></li>
+     <li><a href="https://www.youtube.com/watch?v=6uM7M5vl7W0">
+         scary movie
+         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Movie_poster_for_%22Scary_Movie%22.jpg/220px-Movie_poster_for_%22Scary_Movie%22.jpg" alt="" id="img18" width="250px" height="200px">
+     </a></li>
+     <li><a href="https://www.youtube.com/watch?v=fzV0_g1BRTI">
+           mummy reborn
+         <img src="https://qqcdnpictest.mxplay.com/pic/66304626cb450bdec0d067da280e62e0/en/2x3/320x480/7a535149e92bf875f62b558bfa7caba9_1280x1920.webp" alt="" width="250px" height="200px" id="img19">
+     </a></li>
+     <li><a href="https://www.youtube.com/watch?v=p9TDPxZOFMU">
+          stree
+         <img src="https://filmfare.wwmindia.com/content/2020/may/bollywood-horrar-movie-stree-91588761763.jpg" alt="" width="250px" height="200px"id="img20">
+     </a></li>
+     <li><a href="https://www.youtube.com/watch?v=tNPxSPKLxUs">
+         ek thi daayan
+         <img src="https://filmfare.wwmindia.com/content/2020/may/bollywood-horrar-movie-ek-thi-daayan-61588761732.jpg" alt="" width="250px" height="200px"id="img21">             
+     </a></li>
+    </div>
+   </ul>
+ <script>
+      const searchmovies = ()=>{
 
-         <img src="https://stat2.bollywoodhungama.in/wp-content/uploads/2019/08/Bhool-Bhulaiyaa-2-2-306x393.jpg" alt="" id="img15" width="200px" height="200px">
-     </a>
-     <a href="https://www.youtube.com/watch?v=sSPxzCZhM3s">
+         let filter= document.getElementById('search').value.toUpperCase();
 
-         <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202007/Kanchana.jpeg?v3k0ww9LolWgS2RO4IE5_jfZdRvndr1Q&size=1200:675" alt="" id="img16" width="200px" height="200px">
-     </a>
-     <a href="https://www.youtube.com/watch?v=Of466a8ymIk">
+         let ul= document.getElementById('myul');
 
-         <img src="https://filmfare.wwmindia.com/content/2021/aug/best-english-horror-movie-annabella-51629283623.jpg" alt="" id="img17" width="200px" height="200px">
-     </a>
-     <a href="https://www.youtube.com/watch?v=6uM7M5vl7W0">
+         let li= ul.getElementsByTagName('li');
 
-         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Movie_poster_for_%22Scary_Movie%22.jpg/220px-Movie_poster_for_%22Scary_Movie%22.jpg" alt="" id="img18" width="200px" height="200px">
-     </a>
-     <a href="https://www.youtube.com/watch?v=fzV0_g1BRTI">
+         for(var i=0;i<li.length;i++)
+      {
+          let a=li[i].getElementsByTagName('a')[0];
 
-         <img src="https://qqcdnpictest.mxplay.com/pic/66304626cb450bdec0d067da280e62e0/en/2x3/320x480/7a535149e92bf875f62b558bfa7caba9_1280x1920.webp" alt="" width="200px" height="200px" id="img19">
-     </a>
-     <a href="https://www.youtube.com/watch?v=p9TDPxZOFMU">
+          let textvalue= a.textContent || a.innerHTML;
 
-         <img src="https://filmfare.wwmindia.com/content/2020/may/bollywood-horrar-movie-stree-91588761763.jpg" alt="" width="200px" height="200px"id="img20">
-     </a>
-     <a href="https://www.youtube.com/watch?v=tNPxSPKLxUs">
-
-         <img src="https://filmfare.wwmindia.com/content/2020/may/bollywood-horrar-movie-ek-thi-daayan-61588761732.jpg" alt="" width="200px" height="200px"id="img21">
-     </a>
-
-   </div>
-
-
-</script>
+          if(textvalue.toUpperCase().indexOf(filter) > -1){
+              li[i].style.display='';
+          }
+          else{
+              li[i].style.display='none';
+          }
+      }
+      }
+ </script>
  </body>
+
  </html>
 
