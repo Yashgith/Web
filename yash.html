@@ -6,8 +6,8 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Plan</title>
-   
-   <link rel="stylesheet" href="index.css">
+<!--    
+   <link rel="stylesheet" href="index.css"> -->
  </head>
  <body>
 
@@ -294,30 +294,31 @@ font-size:50%
      </a></li>
     </div>
    </ul>
- <script>
-      const searchmovies = ()=>{
 
-         let filter= document.getElementById('search').value.toUpperCase();
+   <script src="yash.js"></script>
+   <script>
+       const searchmovies=()=>{
 
-         let ul= document.getElementById('myul');
+const filter = document.getElementById('search').value.toUpperCase();
 
-         let li= ul.getElementsByTagName('li');
+const ul=document.getElementById('myul');
 
-         for(var i=0;i<li.length;i++)
-      {
-          let a=li[i].getElementsByTagName('a')[0];
+const li= ul.getElementsByTagName('li');
 
-          let textvalue= a.textContent || a.innerHTML;
+for(var i=0;i<li.length;i++)
+{
+    let a=li[i].getElementsByTagName('a')[0];
+    const textvalue= a.textContent||a.innerHTML;
 
-          if(textvalue.toUpperCase().indexOf(filter) > -1){
-              li[i].style.display='';
-          }
-          else{
-              li[i].style.display='none';
-          }
-      }
-      }
- </script>
+    if(textvalue.toUpperCase().indexOf(filter) > -1){
+        li[i].style.display='';
+    }
+    else{
+        li[i].style.display='none';
+    }
+}
+}
+   </script>
  </body>
 
  </html>
