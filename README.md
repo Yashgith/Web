@@ -1,6 +1,6 @@
 ***Proces to visit Website***
 In VS code first Run the index.js file to connect the database.
-The main File is index.html open with 'localhost:3000' in browser.
+Then the main File is index.html open with 'localhost:3000' in browser.
 Then For Watching the movie,must signup First then only you watch the movie.After signup You will receive message in your entered 'gmail'.
 After signup click on 'Watch Here' button To watch the movie.
 After clicking You direct move to the Next page.
