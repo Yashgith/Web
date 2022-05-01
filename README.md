@@ -10,4 +10,12 @@ After clicking the movie,you will go direct to the movie page.
 
 ***Information***
 
-The Data You entered for signup.We collect the data Usign 'Mongo db' language.For viewing the data You Entered comments in gitbash or View in 'mongodb compass'.
+The Data You entered for signup.We collect the data Usign 'Mongo db' language and send mail to your respective gmail.
+For viewing the data that You Entered for Sign up we use gitbash or 'mongodb compass'.
+
+
+***Materials***
+
+We use Html,CSS as Frontend language and Node js as Backend language.For conncecting the database we use Mongo db.
+We Install 'express' framework in Node js.
+We used 'body-parser','mongoose','nodemon' dependency.
