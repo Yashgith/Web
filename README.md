@@ -12,6 +12,6 @@ The Data You entered for signup.We collect the data Usign 'Mongo db' language an
 For viewing the data that You Entered for Sign up we use gitbash or 'mongodb compass'.
 
 ***Materials***
-We use Html,CSS3 as Frontend language and Node js as Backend language.For conncecting the database we use Mongo db.
-We Install 'express' framework in Node js.
-We used 'body-parser','mongoose','nodemon' dependency.
+ Html,CSS3 as Frontend language and Node js as Backend language.For conncecting the database  used Mongo db.
+ Install 'express' framework in Node js.
+Used 'body-parser','mongoose','nodemon' dependency.
