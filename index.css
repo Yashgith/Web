@@ -1,6 +1,6 @@
-body{
+body{ 
     /* background-color: rgb(59, 4, 4); */
-}
+ }
 
 .open-btn{
     background-color: red;
@@ -26,7 +26,7 @@ input[type="checkbox"]{
     transform: translate(-50%,-50%);
 }
 .container{
-    /* display: none; */
+    /* /* display: none; */
     background: #fff;
     width: 410px;
     padding: 30px;
