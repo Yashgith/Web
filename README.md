@@ -8,7 +8,7 @@ Then You Want any movie to watch click on search bar type the movie.
 After clicking the movie,you will go direct to the movie page.
 
 ***Information***
-The Data You entered for signup.We collect the data Usign 'Mongo db' language and send mail to your respective gmail.
+The Data You entered for signup,collect the data Usign 'Mongo db' language and send mail to your respective gmail.
 For viewing the data that You Entered for Sign up we use gitbash or 'mongodb compass'.
 
 ***Materials***
